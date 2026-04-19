@@ -21,18 +21,18 @@ interface Props {
  */
 
 const CHARACTER_IMAGES: Record<string, string> = {
-  miyu: '/characters/miyu.svg',
-  haneul: '/characters/haneul.svg',
-  luca: '/characters/luca.svg',
-  sora: '/characters/sora.svg',
-  'char-tsundere-miyu': '/characters/miyu.svg',
-  'char-healer-haneul': '/characters/haneul.svg',
-  'char-genius-luca': '/characters/luca.svg',
-  'char-idol-sora': '/characters/sora.svg',
-  ren: '/characters/ren.svg',
-  yujin: '/characters/yujin.svg',
-  'char-vampire-ren': '/characters/ren.svg',
-  'char-ceo-yujin': '/characters/yujin.svg',
+  minwoo: '/characters/minwoo.jpeg',
+  hajun: '/characters/hajun.jpeg',
+  luca: '/characters/luca.jpeg',
+  sion: '/characters/sion.jpeg',
+  'char-tsundere-minwoo': '/characters/minwoo.jpeg',
+  'char-healer-hajun': '/characters/hajun.jpeg',
+  'char-genius-luca': '/characters/luca.jpeg',
+  'char-idol-sion': '/characters/sion.jpeg',
+  ren: '/characters/ren.jpeg',
+  yujin: '/characters/yujin.jpeg',
+  'char-vampire-ren': '/characters/ren.jpeg',
+  'char-ceo-yujin': '/characters/yujin.jpeg',
 };
 
 // 감정별 오버레이 이모지 + 색상 효과

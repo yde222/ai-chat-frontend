@@ -1,0 +1,50 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 200" fill="none">
+  <circle cx="100" cy="100" r="100" fill="url(#sora-bg)"/>
+  <!-- 머리카락 (밝은 파랑 + 트윈테일) -->
+  <ellipse cx="100" cy="85" rx="58" ry="60" fill="#60A5FA"/>
+  <!-- 트윈테일 왼쪽 -->
+  <path d="M42 90 Q30 120 35 160 Q40 140 48 120 Z" fill="#3B82F6"/>
+  <ellipse cx="37" cy="155" rx="10" ry="12" fill="#60A5FA"/>
+  <!-- 트윈테일 오른쪽 -->
+  <path d="M158 90 Q170 120 165 160 Q160 140 152 120 Z" fill="#3B82F6"/>
+  <ellipse cx="163" cy="155" rx="10" ry="12" fill="#60A5FA"/>
+  <!-- 앞머리 -->
+  <path d="M52 78 Q72 48 100 52 Q128 48 148 78 Q140 55 100 50 Q60 55 52 78Z" fill="#7DD3FC"/>
+  <path d="M60 80 Q68 62 80 72" fill="#7DD3FC" opacity="0.6"/>
+  <path d="M140 80 Q132 62 120 72" fill="#7DD3FC" opacity="0.6"/>
+  <!-- 얼굴 -->
+  <ellipse cx="100" cy="108" rx="47" ry="50" fill="#FDE8D8"/>
+  <!-- 눈 (키라키라 큰 눈) -->
+  <ellipse cx="77" cy="103" rx="10" ry="11" fill="white"/>
+  <ellipse cx="123" cy="103" rx="10" ry="11" fill="white"/>
+  <ellipse cx="78" cy="104" rx="7" ry="8" fill="#06B6D4"/>
+  <ellipse cx="124" cy="104" rx="7" ry="8" fill="#06B6D4"/>
+  <circle cx="80" cy="101" r="3" fill="white"/>
+  <circle cx="126" cy="101" r="3" fill="white"/>
+  <circle cx="76" cy="106" r="1.5" fill="white" opacity="0.7"/>
+  <circle cx="122" cy="106" r="1.5" fill="white" opacity="0.7"/>
+  <!-- 눈썹 -->
+  <path d="M66 90 Q76 86 88 89" stroke="#3B82F6" stroke-width="2" fill="none" stroke-linecap="round"/>
+  <path d="M112 89 Q124 86 134 90" stroke="#3B82F6" stroke-width="2" fill="none" stroke-linecap="round"/>
+  <!-- 입 (밝은 미소) -->
+  <path d="M88 120 Q100 128 112 120" stroke="#F0A0A0" stroke-width="2.5" fill="#FFE8E8" stroke-linecap="round"/>
+  <!-- 볼 터치 -->
+  <ellipse cx="66" cy="116" rx="9" ry="6" fill="#FFB5C5" opacity="0.4"/>
+  <ellipse cx="134" cy="116" rx="9" ry="6" fill="#FFB5C5" opacity="0.4"/>
+  <!-- 별 장식 -->
+  <polygon points="148,65 150,71 156,71 151,75 153,81 148,77 143,81 145,75 140,71 146,71" fill="#FCD34D" opacity="0.9"/>
+  <polygon points="42,70 43,73 46,73 44,76 45,79 42,77 39,79 40,76 38,73 41,73" fill="#FCD34D" opacity="0.6"/>
+  <!-- 리본 -->
+  <path d="M42 82 Q32 75 38 68 Q42 78 42 82Z" fill="#F472B6"/>
+  <path d="M42 82 Q52 75 46 68 Q42 78 42 82Z" fill="#F472B6"/>
+  <circle cx="42" cy="82" r="3" fill="#EC4899"/>
+  <path d="M158 82 Q148 75 152 68 Q158 78 158 82Z" fill="#F472B6"/>
+  <path d="M158 82 Q168 75 164 68 Q158 78 158 82Z" fill="#F472B6"/>
+  <circle cx="158" cy="82" r="3" fill="#EC4899"/>
+  <defs>
+    <radialGradient id="sora-bg" cx="0.5" cy="0.5" r="0.5">
+      <stop offset="0%" stop-color="#CFFAFE"/>
+      <stop offset="100%" stop-color="#A5F3FC"/>
+    </radialGradient>
+  </defs>
+</svg>

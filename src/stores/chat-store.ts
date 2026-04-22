@@ -125,7 +125,7 @@ export const useChatStore = create<ChatState>((set, get) => ({
     });
 
     socket.on('chat_chunk', (data: any) => {
-      const { chunk, isFinal, emotion } = data;
+      const { content: chunk, isFinal, emotion } = data;
 
       if (isFinal) {
         turnCount++;

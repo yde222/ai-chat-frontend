@@ -125,7 +125,7 @@ export const useChatStore = create<ChatState>((set, get) => ({
     });
 
     socket.on('chat_chunk', (data: any) => {
-      const { content: chunk, isFinal, emotion } = data;
+      const { content: chunk, isFinal, emotion, choices: serverChoices } = data;
 
       if (isFinal) {
         turnCount++;
@@ -138,13 +138,19 @@ export const useChatStore = create<ChatState>((set, get) => ({
             lastMsg.isStreaming = false;
             lastMsg.emotion = emotionStr;
 
-            // 3턴마다 선택지 부착
+            // 3턴마다 선택지 부착 — 서버에서 생성한 맥락 기반 선택지 우선 사용
             if (turnCount % CHOICE_INTERVAL === 0) {
-              const pool = CHOICE_POOL[emotionStr] || CHOICE_POOL.NEUTRAL;
-              lastMsg.choices = pool.map((c) => ({
-                ...c,
-                id: `${c.id}_${Date.now()}`,
-              }));
+              if (serverChoices && serverChoices.length > 0) {
+                // LLM이 대화 맥락에 맞게 생성한 선택지
+                lastMsg.choices = serverChoices;
+              } else {
+                // fallback: 정적 감정 기반 선택지
+                const pool = CHOICE_POOL[emotionStr] || CHOICE_POOL.NEUTRAL;
+                lastMsg.choices = pool.map((c) => ({
+                  ...c,
+                  id: `${c.id}_${Date.now()}`,
+                }));
+              }
             }
           }
           return {
